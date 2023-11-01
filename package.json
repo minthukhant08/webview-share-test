@@ -13,9 +13,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-share": "^4.4.1",
-    "react-share-on-social": "^1.0.12",
     "react-share-social": "^0.1.55",
-    "react-ssr-prepass": "^1.5.0",
     "react-web-share": "^2.0.2"
   },
   "devDependencies": {
