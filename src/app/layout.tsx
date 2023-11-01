@@ -26,7 +26,7 @@ export default function RootLayout({
           <Link href={'/react-web-share'}>react web share</Link>
           </div>
           <div className='p-1'>
-          <Link href={'/share-on-social'}>share-on-social</Link>
+          <Link href={'/native-share'}>native share</Link>
           </div>
         </div>
         <div className='flex w-full justify-center items-center h-screen' >{children}</div>
