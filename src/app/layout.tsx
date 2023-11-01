@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +17,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className='pt-10 flex flex-row' >
+          <div className='p-1'>
+          <Link href={'/react-share'}>react share</Link>
+          </div>
+          <div className='p-1'>
+          <Link href={'/react-web-share'}>react web share</Link>
+          </div>
+          <div className='p-1'>
+          <Link href={'/share-on-social'}>share-on-social</Link>
+          </div>
+        </div>
+        <div className='flex w-full justify-center items-center h-screen' >{children}</div>
+      </body>
     </html>
   )
 }
