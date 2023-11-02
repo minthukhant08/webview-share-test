@@ -7,10 +7,12 @@ import { FacebookIcon, TwitterIcon } from 'react-share'
 
 const Page = () => {
     const shareUrl = 'https://frontend.partner.member.dev.d3lab.co/'; // URL to share
-    const title = 'Check out this awesome content!';
+    const title = 'Share Title or Descritpion';
     const imageUrl = 'https://fakeimg.pl/600x400'; // URL to the image you want to share
   
     return (
+      <div>
+      <a href="https://www.npmjs.com/package/react-share" target='_blank'>Documentation</a> <br />
       <div>
         <Image src={imageUrl} alt="Shared Image" width={100} height={100}/>
         <p>{title}</p>
@@ -25,6 +27,8 @@ const Page = () => {
           <TwitterIcon size={32} round />
         </TwitterShareButton>
       </div>
+      </div>
+      
     );
   };
 

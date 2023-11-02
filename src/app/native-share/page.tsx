@@ -12,8 +12,8 @@ const Page = () => {
     const handleShare = () => {
       const data = {
           url: 'https://frontend.partner.member.dev.d3lab.co',
-          title: 'native share',
-          text: 'descripton here..........'
+          title: 'Share Title',
+          text: 'Share description..........'
       }
         if(navigator.share){
             navigator.share(data)
@@ -25,9 +25,13 @@ const Page = () => {
         }
     }
     return (
-      <div onClick={handleShare}>
+      <div>
+        <a href="https://reactnative.dev/docs/share" target='_blank'>Documentation</a> <br />
+        <div onClick={handleShare}>
         Share
       </div>
+      </div>
+      
     );
   };
 
