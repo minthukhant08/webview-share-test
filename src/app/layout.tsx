@@ -19,14 +19,17 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className='pt-10 flex flex-row' >
-          <div className='p-1'>
+          <div className='p-3'>
           <Link href={'/react-share'}>react share</Link>
           </div>
-          <div className='p-1'>
+          <div className='p-3'>
           <Link href={'/react-web-share'}>react web share</Link>
           </div>
-          <div className='p-1'>
+          <div className='p-3'>
           <Link href={'/native-share'}>native share</Link>
+          </div>
+          <div className='p-3'>
+          <Link href={'/react-native-share'}>react native share</Link>
           </div>
         </div>
         <div className='flex w-full justify-center items-center h-screen' >{children}</div>

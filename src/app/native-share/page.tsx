@@ -11,6 +11,7 @@ const Page = () => {
   }, []);
     const handleShare = () => {
       const data = {
+          type: 'share',
           url: 'https://frontend.partner.member.dev.d3lab.co',
           title: 'Share Title',
           text: 'Share description..........'
