@@ -15,7 +15,8 @@ const Page = () => {
           type: 'RNShare',
           url: 'https://frontend.partner.member.dev.d3lab.co',
           title: 'Share Title',
-          text: 'Share description..........'
+          text: 'Share description..........',
+          image: 'https://fakeimg.pl/600x400'
       }
       //@ts-ignore
       window.ReactNativeWebView.postMessage(JSON.stringify(data));
