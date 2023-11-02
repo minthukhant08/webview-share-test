@@ -22,7 +22,6 @@ const Page = () => {
             navigator.clipboard.writeText('Copied text')
             //@ts-ignore
             window.ReactNativeWebView.postMessage(JSON.stringify(data));
-            alert('copied')
         }
     }
     return (
