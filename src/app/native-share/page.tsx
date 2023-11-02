@@ -1,8 +1,14 @@
 'use client'
-import React from 'react';
+import React, { useEffect } from 'react';
 
 
 const Page = () => {
+  useEffect(() => {
+    const messageListener = window.addEventListener('message', (nativeEvent) => {
+      console.log(nativeEvent?.data);
+    });
+    return messageListener;
+  }, []);
     const handleShare = () => {
       const data = {
           url: 'https://frontend.partner.member.dev.d3lab.co',
